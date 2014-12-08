@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a 'browser action' with kittens.",
+  "name": "TIme",
+  "description": "Display time in new tab",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
+    
   },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  
   "permissions": [
-    "https://secure.flickr.com/"
-  ]
+          "tabs"
+        ]
 }
